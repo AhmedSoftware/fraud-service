@@ -42,12 +42,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
+
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -86,7 +81,8 @@
 				<version>2.2.3.RELEASE</version>
 				<extensions>true</extensions>
 				<configuration>
-					<testFramework>JUNIT5</testFramework>
+					<baseClassForTests>com.ahmedsoftware.fraudservice.BaseClass</baseClassForTests>
+
 				</configuration>
 			</plugin>
 			<plugin>
