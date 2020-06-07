@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 public class FraudController {
     
-    @GetMapping(path = "/frauds")
+    @GetMapping(path = "/fraud")
     ResponseEntity<List<String>> fraud(){
         return ResponseEntity.status(201).body(Arrays.asList("ahmed","ali"));
     }
