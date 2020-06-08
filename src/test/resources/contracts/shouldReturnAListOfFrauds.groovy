@@ -5,7 +5,7 @@ import org.springframework.cloud.contract.spec.Contract
 Contract.make {
     description "should return a liste of frauds"
     request{
-        url "/frauds"
+        url "/fraud"
         method GET()
     }
     response{
