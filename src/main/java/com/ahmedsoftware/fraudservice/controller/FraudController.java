@@ -2,6 +2,7 @@ package com.ahmedsoftware.fraudservice.controller;
 
 
 import com.ahmedsoftware.fraudservice.pojo.Fraud;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.support.MessageBuilder;
@@ -15,6 +16,8 @@ import java.util.List;
 
 @RestController
 public class FraudController {
+    
+    
     private final Source source;
     
     public FraudController(Source source) {
